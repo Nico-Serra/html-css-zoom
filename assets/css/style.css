@@ -1,3 +1,5 @@
+/* #region common */
+
 /* Palette Coulor */
 
 :root{
@@ -16,12 +18,24 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/* #endregion common */
+
+/* #region utilities */
+
 .container{
     width: 90%;
     margin: auto;
     max-width: 1200px;
     padding-top: 3rem;
     
+}
+
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .row{
@@ -42,6 +56,12 @@ img{
     width: 100%;
     display: block;
 }
+
+.text{
+    font-size: 10px;
+}
+
+/* #endregion utilities */
 
 /* #region site_main */
 #site_main{
@@ -80,5 +100,27 @@ img{
     padding: 0.2rem;
     font-size: 0.8rem;
     opacity: 0.7;
+}
+
+.calltoaction{
+    background-color: var(--zoom-primmary);
+    
+}
+
+.buttons{
+    padding: 0.5rem;
+}
+
+.left_buttons{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.center_buttons{    
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+
 }
 /* #endregion site_main */
