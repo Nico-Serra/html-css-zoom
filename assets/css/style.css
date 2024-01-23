@@ -7,7 +7,7 @@
     --zoom-dark: rgba(0, 0, 0, 1);
     --zoom-light: rgba(255, 255, 255, 1);
     --zoom-danger: rgba(218, 44, 56, 1);
-    --zoom-accent: gba(75, 200, 0, 1);
+    --zoom-accent: rgba(75, 200, 0, 1);
 
 }
 
@@ -27,7 +27,7 @@
     width: 90%;
     margin: auto;
     max-width: 1200px;
-    padding-top: 3rem;
+    padding-top: 2.2rem;
 
 }
 
@@ -47,8 +47,8 @@
 
 
 .col_1 {
-    width: calc((100% /12)*1.71);
-    padding: 0.2rem;
+    width: calc((100% /12)*1.65);
+    padding: 2px ;
     position: relative;
 }
 
@@ -59,6 +59,7 @@ img {
 
 .text {
     font-size: 10px;
+    color: var(--zoom-light);
 }
 
 /* #endregion utilities */
@@ -96,7 +97,7 @@ img {
 .name {
     color: var(--zoom-light);
     position: absolute;
-    bottom: 20px;
+    bottom: 0;
     background-color: var(--zoom-dark);
     padding: 0.2rem;
     font-size: 0.8rem;
@@ -105,11 +106,14 @@ img {
 
 .calltoaction {
     background-color: var(--zoom-primmary);
-
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .buttons {
-    padding: 0.5rem;
+    padding: 0.2rem;
 }
 
 .left_buttons {
@@ -123,6 +127,12 @@ img {
     color: white;
     text-align: center;
 
+}
+
+.green{
+    font-size: 1rem;
+    color: var(--zoom-accent);
+    text-align: center;
 }
 
 .right_buttons {
