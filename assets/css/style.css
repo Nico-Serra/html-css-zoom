@@ -67,6 +67,7 @@ img {
 #site_main {
     background-color: var(--zoom-dark);
     height: 100vh;
+    overflow: hidden;
 }
 
 .screen {
