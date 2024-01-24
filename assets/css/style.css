@@ -139,12 +139,15 @@ img {
     font-size: 0.8rem;
     color: var(--zoom-danger);
     text-align: center;
-
-
+    padding: 0.8rem;
 }
 
 #green {
     color: var(--zoom-accent);
+}
+
+.right_buttons:hover {
+ background-color: gray;
 }
 
 /* #endregion site_main */
