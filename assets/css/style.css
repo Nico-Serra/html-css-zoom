@@ -26,8 +26,7 @@
 .container {
     width: 90%;
     margin: auto;
-    max-width: 1200px;
-    padding-top: 2.2rem;
+    max-width: 1600px;
 
 }
 
@@ -38,18 +37,24 @@
     align-items: center;
 }
 
+main{
+    height:calc(100vh - 100px);
+    overflow: auto;
+    padding-bottom: 1rem;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -0.2rem;
-    margin-right: -0.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 
 .col_1 {
-    width: calc((100% /12)*1.65);
-    padding: 2px ;
     position: relative;
+    
 }
 
 img {
@@ -65,17 +70,16 @@ img {
 /* #endregion utilities */
 
 /* #region site_main */
-#site_main {
+.wrapped {
     background-color: var(--zoom-dark);
     height: 100vh;
     overflow: hidden;
 }
 
 .screen {
-    position: absolute;
-    right: 0.5rem;
-    top: 0.5rem;
-
+    height: 50px;
+    text-align: end;
+    line-height: 50px;
 }
 
 .view {
@@ -106,10 +110,7 @@ img {
 
 .calltoaction {
     background-color: var(--zoom-primmary);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 10;
+    height: 50px;
 }
 
 .buttons {
@@ -139,7 +140,9 @@ img {
     font-size: 0.8rem;
     color: var(--zoom-danger);
     text-align: center;
-    padding: 0.8rem;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 1rem;
 }
 
 #green {
